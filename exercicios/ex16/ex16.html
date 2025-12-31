@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+iframe {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  z-index: 1; /* garante que o item fique por cima ao crescer */
+}
+
+iframe:hover {
+  transform: scale(1.1); /* pode aumentar um pouco mais o zoom */
+  z-index: 2; /* traz o item pra frente */
+}
+    </style>
+</head>
+<body>
+    <h1>Vídeos bons de assistir</h1>
+    <a href="hardware.html">
+    <img src="thumb-hardware.png" alt="imagem1"></a>
+    <a href="curso.html">
+    <img src="thumb-html.png" alt="imagem2"></a>
+    <br>
+    <a href="java.html">
+    <img src="thumb-js.png" alt="imagem3"></a>
+    <a href="python.html">
+    <img src="thumb-python.png" alt="imagem4"></a>
+</body>
+</html>
