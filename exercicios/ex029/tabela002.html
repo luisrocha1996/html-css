@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black ;
+            padding: 10 px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        caption {
+            font-size: 1.0em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: gray;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: white
+
+        }
+
+         tbody tr:nth-child(even) {
+            background-color: rgb(206, 187, 187)
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Total de habitantes aleatorios</caption>
+       <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+        </tr>
+
+       </thead>
+
+       <tbody>
+        <tr>
+            <td scope ="col">São Paulo</td>
+            <td scope="col">45919049</td>
+        </tr>
+        <tr>
+            <td>Minas Geraus</td>
+            <td>21168791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td>17264943</td>
+        </tr>
+        <tr>
+            <td>Porto</td>
+            <td>220000</td>
+        </tr>
+
+       </tbody>
+
+       <tfoot>
+        <tr>
+            <th scope="row"> Total de Habitantes</th>
+            <td><strong>2100000</strong></td>
+        </tr>
+       </tfoot>
+    </table>
+</body>
+</html>
