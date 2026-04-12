@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Distritos</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>Escolha ---</option>
+
+             <optgroup label="Portugal"> 
+                <option value="Pt">Porto</option>
+                <option value="LB">Lisboa</option>
+                <option value="Bra">Braga</option>
+                <option value="AV">Aveiro</option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="lstprof">
+            
+            
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="ct">Contabilista</option>
+                <option value="ds">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+    </form>
+</body>
+</html>
