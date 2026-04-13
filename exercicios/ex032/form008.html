@@ -9,19 +9,23 @@
         <h1>Exemplo de Formulario</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="icor">Cor</label>
-            <input type="color" name="Cor" id="icor" >
+            <label for="in1">Numero 1</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="idisoma">
         </p>
-       
-        <p>
-            <label for="inive">Nível de Satisfação</label>
-            <input type="range" name="nivel" id="invel" min="1" max="5" value="2">
+
+            <p>
+            <label for="in2">Numero 2</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required>
         </p>
 
         <p>
-            <label for="ifoto">Foto de Perfil</label>
-            <input type="file" name="foto" id="ifoto">
+            <label for="isoma">soma</label>
+            <output name="soma" id="idisoma">0</output>
         </p>
+
+       
+
+  
 
         <p>
             <input type="submit" value="Enviar">
